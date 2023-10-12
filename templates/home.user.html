@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <!-- Add a custom CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin-top: 100px;
+      color: rgb(20, 11, 13);
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    nav ul.list-inline {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul.list-inline li.list-inline-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul.list-inline li.list-inline-item a {
+      text-decoration: none;
+      color: #dd1133;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav ul.list-inline li.list-inline-item a:hover {
+      text-decoration: underline;
+    }
+
+    section p {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Your Dashboard, "{{.UserName}}"!</h1>
+    </header>
+    <nav>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/home">Home</a></li>
+        <li class="list-inline-item"><a href="/profile">Profile</a></li>
+        <li class="list-inline-item"><a href="/settings">Settings</a></li>
+        <li class="list-inline-item"><a href="/logout">Log Out</a></li>
+      </ul>
+    </nav>
+    <section>
+      <p>Explore, Customize, and Enjoy Your Experience!</p>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
